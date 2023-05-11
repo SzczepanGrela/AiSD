@@ -10,4 +10,3 @@ def dzies_na_dwojk(num):
 
 a=int(input("Podaj a: "))
 a=dzies_na_dwojk(a)
-print(a)
