@@ -13,4 +13,5 @@ Rozwinięcia skrótów:
 4. wer_II_Reku  Wersja II rekurencyjna
 
 1b_3:  Laboratorium 1 -> część b -> Zadanie 3
+
 1r_4:  Laboratorium 1-> część rekurencyjna -> Zadanie 4
