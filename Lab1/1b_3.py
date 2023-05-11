@@ -19,6 +19,6 @@ for i in range(len(tab) - 1):
     for j in range(i + 1, len(tab)):
         if int_to_str(tab[j]) < int_to_str(tab[min]):
             min = j
-    zamien = tab[i]   """Zamiana elementów"""
+    zamien = tab[i]   #Zamiana elementów
     tab[i] = tab[min]
     tab[min] = zamien
