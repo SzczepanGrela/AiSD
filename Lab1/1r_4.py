@@ -6,5 +6,8 @@ def dzies_na_dwojk(num):
         nieparzyste = num % 2
         return dzies_na_dwojk(num // 2) * 10 + nieparzyste
 
-    
-print(dzies_na_dwojk(25))
+
+
+a=int(input("Podaj a: "))
+a=dzies_na_dwojk(a)
+print(a)
