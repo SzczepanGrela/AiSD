@@ -1,6 +1,6 @@
 def newton(n=5,m=5):
     if n<0 or m<0: return print("nieprawidłowa wartosc")
-    tab=[[]]   ## dla n=0 i m=0
+    tab=[[]]   
     i=0
     while(i<n):                 # i stanowi rządy i oznaczają górny wyraz n
         j=0
