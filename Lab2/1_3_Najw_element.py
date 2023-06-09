@@ -1,3 +1,4 @@
+import random
 def najw(l,r,A):
     m=(r-l)+1       #zamiast funkcji len, obliczam długość fragmentu 
     if m==1: return A[l]    #gdy fragment ma jeden element, największą jego wartością jest jego jedyny element
@@ -13,7 +14,7 @@ def najw(l,r,A):
             return b
 
 
-tab=[101,102,103,104,4,5,6,100,8,123,2,3,4,5,6,1222]
+tab=[random.randint(1, 100) for _ in range(25)]
 
 print(najw(0,len(tab)-1,tab))             
         
