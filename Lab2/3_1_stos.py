@@ -21,9 +21,5 @@ class stack():
         return str(self.stack)
     
 
-stos=stack()
 
-stos.push("dupa")
-print(stos.peek())
-stos.pop()
 
