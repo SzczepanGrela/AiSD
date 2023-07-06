@@ -1,24 +1,20 @@
 
-# Zbiór pusty T
 T = []
-
-
 V = set()
-E = [(6,7,1),(2,4,2),(7,8,2),(0,1,4),(2,8,4),(4,7,6),(2,3,7),(4,6,7),(0,6,8),(1,2,8),(3,5,9),(5,8,10),(1,6,11),(3,8,14)]
+G = [(6,7,1),(2,4,2),(7,8,2),(0,1,4),(2,8,4),(4,7,6),(2,3,7),(4,6,7),(0,6,8),(1,2,8),(3,5,9),(5,8,10),(1,6,11),(3,8,14)]
 
-for kraw in E:
-    u, v, w = kraw
+for krawedz in G:
+    u, v, w = krawedz
     V.add(u)
     V.add(v)
 
-podzbiory = [{v} for v in V]# Utworzenie rozłącznych podzbiorów zbioru V
+podzbiory = [{v} for v in V]
 
-# Sortowanie zbioru krawędzi E w porządku niemalejącym ze względu na wagi krawędzi
-E.sort(key=lambda kraw: kraw[2])
+#sortowanie po wadze 
+G.sort(key=lambda krawedz: krawedz[2])
 
-# Przeglądanie krawędzi z uporządkowanego zbioru E
-for kraw in E:
-    u, v, w = kraw
+for krawedz in G:
+    u, v, w = krawedz
     u_set = None
     v_set = None
 
@@ -38,9 +34,9 @@ for kraw in E:
         T.append((u, v, w))
 
 
-print("Krawędź \tWaga")
-for kraw in T:
-    u, v, w = kraw
+
+for krawedz in T:
+    u, v, w = krawedz
     print(f"({u},{v}-{w})")
 
 
