@@ -8,16 +8,13 @@ for krawedz in G:
     V.add(u)
     V.add(v)
 
-podzbiory = [{v} for v in V]
+podzbiory = [{wierzch} for wierzch in V]
 
 #sortowanie po wadze 
 G.sort(key=lambda krawedz: krawedz[2])
 
 for krawedz in G:
     u, v, w = krawedz
-    u_set = None
-    v_set = None
-
     # Wyszukiwanie podzbiorów zawierających u i v
     for podzbior in podzbiory:
         if u in podzbior:
@@ -35,9 +32,7 @@ for krawedz in G:
 
 
 
-for krawedz in T:
-    u, v, w = krawedz
-    print(f"({u},{v}-{w})")
+print(T)
 
 
 

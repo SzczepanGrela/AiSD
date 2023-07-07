@@ -59,7 +59,7 @@ while True:
     u=v
     del Q[l-1]
     if element==n-1: break
-    i+=1
+    
     
 
 print(T)
