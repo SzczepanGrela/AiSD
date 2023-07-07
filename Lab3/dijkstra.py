@@ -15,7 +15,7 @@ droga[u]=0
 
 
 while True:
-    sasiedzi=[]
+   
     for i in range(n):
         
         visited[u]=True
@@ -23,7 +23,7 @@ while True:
         
         
         if j!=0: 
-            sasiedzi.append(i)  ##zapisywanie indeksu sąsiada wierzchołka u
+            
             if droga[i]>(j+droga[u]): 
                 droga[i]=(j+droga[u])
                 rodzic[i]=u
